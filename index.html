@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Forms</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="main">
+			<div class="main__container">
+				<div class="make-an-appointment">
+					<div class="make-an-appointment__title">Make an appointment</div>
+					<form action="#" enctype="multipart/form-data" class="make-an-appointment__form">
+						<div class="make-an-appointment__line">
+							<input type="text" name="username" required placeholder="Name" autocomplete="off" class="make-an-appointment__input">
+							<input type="email" name="email" required placeholder="Email" autocomplete="off" class="make-an-appointment__input">
+						</div>
+						<div class="make-an-appointment__line">
+							<input type="tel" name="phone" required placeholder="Phone Number" autocomplete="off" class="make-an-appointment__input">
+							<select name="select" class="make-an-appointment__select">
+								<option value="1" selected class="make-an-appointment__option">Select Service</option>
+								<option value="1" class="make-an-appointment__option">Service 1</option>
+								<option value="2" class="make-an-appointment__option">Service 2</option>
+								<option value="3" class="make-an-appointment__option">Service 3</option>
+							</select>
+						</div>
+						<div class="make-an-appointment__textarea">
+							<textarea name="text" required placeholder="Tell us about your puppers include his/her name" autocomplete="off" class="textarea"></textarea>
+						</div>
+						<div class="make-an-appointment__button"><button type="reset" class="button-make-an-appointment button">Make an Appointment</button></div>
+					</form>
+				</div>
+				<div class="registered-customers">
+					<div class="registered-customers__title">Registered Customers</div>
+					<div class="registered-customers__text">If you have an account, sign in with your email address.</div>
+					<form action="#" enctype="multipart/form-data" class="registered-customers__form">
+						<div class="registered-customers__lines">
+							<div class="registered-customers__line">
+								<label for="input_01" class="registered-customers__label">Email <span class="registered-customers__symbol">*</span></label>
+								<input id="input_01" type="text" name="username" required placeholder="Your Name" autocomplete="off" class="registered-customers__input">
+							</div>
+							<div class="registered-customers__line">
+								<label for="input_02" class="registered-customers__label">Password <span class="registered-customers__symbol">*</span></label>
+								<input id="input_02" type="password" name="password" required placeholder="Password" autocomplete="off" class="registered-customers__input">
+							</div>
+						</div>
+						<div class="registered-customers__links">
+							<button type="submit" class="registered-customers__button">Sign In</button>
+							<button type="button" class="registered-customers__link">Forgot Your Password?</button>
+						</div>
+					</form>
+				</div>
+				<div class="summary">
+					<form action="#" enctype="multipart/form-data" class="summary__form">
+						<div class="summary__title">Summary</div>
+						<div class="summary__subtitle">Estimate Shipping and Tax</div>
+						<div class="summary__text">Enter your destination to get a shipping estimate.</div>
+						<div class="summary__line summary__line_arrow">
+							<label for="select_01" class="summary__label">Country</label>
+							<select name="select" id="select_01" class="summary__select input-summary">
+								<option value="1" selected class="summary__option">Australia</option>
+								<option value="2" class="summary__option">Germany</option>
+								<option value="3" class="summary__option">India</option>
+							</select>
+						</div>
+						<div class="summary__line">
+							<label for="input_03" class="summary__label">State/Province</label>
+							<input id="input_03" type="text" name="state" required autocomplete="off" class="summary__input input-summary">
+						</div>
+						<div class="summary__line summary__line_margin-01">
+							<label for="input_04" class="summary__label">Zip/Postal Code</label>
+							<input id="input_04" type="text" name="state" required autocomplete="off" class="summary__input summary__input_margin1 input-summary">
+						</div>
+						<div class="summary__line">
+							<label for="input_05" class="summary__label">Standard Rate</label>
+							<div class="summary__item"><input id="input_05" checked name="rate" value="contact" type="radio" class="summary__radio"><span class="radio-text">Price may vary depending on the item/destination. Shop Staff will contact you. $21.00</span></div>
+						</div>
+						<div class="summary__line summary__line_margin-02">
+							<label for="input_06" class="summary__label">Pickup from store</label>
+							<div class="summary__item"><input id="input_06" name="pickup" value="adress" type="radio" class="summary__radio"><span class="radio-text">1234 Street Adress City Address, 1234 $0.00</span></div>
+						</div>
+						<div class="summary__subtitle">Apply Discount Code</div>
+						<div class="summary__line summary__line_margin-03">
+							<label for="input_07" class="summary__label ">Enter discount code</label>
+							<input id="input_07" type="text" name="code" placeholder="Enter Discount code" required autocomplete="off" class=" summary__input summary__input_margin input-summary">
+						</div>
+						<button type="submit" class="summary__button">Apply Discount</button>
+					</form>
+				</div>
+			</div>
+		</main>
+	</div>
+</body>
+</html>
